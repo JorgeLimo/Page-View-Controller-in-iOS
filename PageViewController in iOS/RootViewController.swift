@@ -2,7 +2,7 @@
 //  RootViewController.swift
 //  PageViewController in iOS
 //
-//  Created by alumno on 3/2/17.
+//  Created by JorgeLimo on 3/2/17.
 //  Copyright © 2017 Jorge Limo. All rights reserved.
 //
 
@@ -17,7 +17,7 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         // Configure the page view controller and add it as a child view controller.
-        self.pageViewController = UIPageViewController(transitionStyle: .pageCurl, navigationOrientation: .horizontal, options: nil)
+        self.pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .vertical, options: nil)
         self.pageViewController!.delegate = self
 
         let startingViewController: DataViewController = self.modelController.viewControllerAtIndex(0, storyboard: self.storyboard!)!
